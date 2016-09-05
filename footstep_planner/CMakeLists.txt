@@ -52,3 +52,7 @@ install(TARGETS ${PROJECT_NAME} footstep_planner_node footstep_planner_walls
 install(TARGETS footstep_navigation_node
         DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
+install(DIRECTORY include/${PROJECT_NAME}/
+  DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
+  FILES_MATCHING PATTERN "*.h"
+)
