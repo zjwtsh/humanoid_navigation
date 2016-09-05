@@ -1,6 +1,6 @@
 <package>
   <name>footstep_planner</name>
-  <version>0.4.0</version>
+  <version>0.4.1</version>
   <description>
 
      <p>A footstep planner for humanoid / biped robots. The planner builds on SBPL and has anytime as well as dynamic replanning capabilities. The supported planners are: ARA*, AD*, R*.</p>

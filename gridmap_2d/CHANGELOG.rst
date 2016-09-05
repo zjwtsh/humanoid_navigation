@@ -2,8 +2,8 @@
 Changelog for package gridmap_2d
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.4.1 (2016-09-05)
+------------------
 * Added include files for footstep_planner and gridmap_2d for install.
 * gridmap_2d : OpenCV migration for indigo.
 * gridmap_2d: Adding conversion back to OccupancyGrid msg

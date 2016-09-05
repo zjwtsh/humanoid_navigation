@@ -2,8 +2,8 @@
 Changelog for package humanoid_localization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.4.1 (2016-09-05)
+------------------
 * catkinize the stack
 * get code to compile under Hydro
 * removes some trailing blanks and semicolon

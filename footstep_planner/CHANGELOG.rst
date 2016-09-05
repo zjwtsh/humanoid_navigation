@@ -2,8 +2,8 @@
 Changelog for package footstep_planner
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.4.1 (2016-09-05)
+------------------
 * Added include files for footstep_planner and gridmap_2d for install.
 * uses double 2.0 and makes style locally consistent
 * catkinize the stack

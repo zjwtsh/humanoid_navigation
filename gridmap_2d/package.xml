@@ -1,6 +1,6 @@
 <package>
   <name>gridmap_2d</name>
-  <version>0.4.0</version>
+  <version>0.4.1</version>
   <description>
 
      gridmap_2d - a simple 2D gridmap structure, based on OpenCV's cv::Mat

@@ -1,6 +1,6 @@
 <package>
   <name>humanoid_navigation</name>
-  <version>0.4.0</version>
+  <version>0.4.1</version>
   <description>
         <p>This stack contains packages for humanoid (biped) navigation,
         developed at the <a href="http://hrl.informatik.uni-freiburg.de/">Humanoid Robots Lab</a>

@@ -2,8 +2,8 @@
 Changelog for package humanoid_planner_2d
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.4.1 (2016-09-05)
+------------------
 * catkinize the stack
 * humanoid_planner_2d on gridmaps, provides a lightweight wrapper around SBPL
 
