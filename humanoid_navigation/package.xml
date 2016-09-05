@@ -1,6 +1,6 @@
 <package>
   <name>humanoid_navigation</name>
-  <version>1.0.1</version>
+  <version>0.4.0</version>
   <description>
         <p>This stack contains packages for humanoid (biped) navigation,
         developed at the <a href="http://hrl.informatik.uni-freiburg.de/">Humanoid Robots Lab</a>
@@ -8,6 +8,7 @@
    </p>
   </description>
   <maintainer email="HornungA@informatik.uni-freiburg.de">Armin Hornung</maintainer>
+  <maintainer email="aravindadp@gmail.com">Pramuditha Aravinda</maintainer>
   <author>Armin Hornung</author>
   <license>BSD,GPL 3</license>
   <url>http://ros.org/wiki/humanoid_navigation</url>
