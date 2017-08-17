@@ -275,7 +275,9 @@ protected:
   /// @brief Updates the environment in case of a changed map.
   void updateEnvironment(const gridmap_2d::GridMap2DPtr old_map);
 
+  //boost::shared_ptr<FootstepPlannerEnvironment> ivPlannerEnvironmentPtr;
   boost::shared_ptr<FootstepPlannerEnvironment> ivPlannerEnvironmentPtr;
+  
   gridmap_2d::GridMap2DPtr ivMapPtr;
   boost::shared_ptr<SBPLPlanner> ivPlannerPtr;
 

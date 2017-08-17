@@ -28,7 +28,7 @@ using gridmap_2d::GridMap2DPtr;
 
 namespace footstep_planner
 {
-FootstepPlanner::FootstepPlanner()
+PathFollowPlanner::PathFollowPlanner()
 : ivStartPoseSetUp(false),
   ivGoalPoseSetUp(false),
   ivLastMarkerMsgSize(0),
@@ -83,6 +83,10 @@ FootstepPlanner::FootstepPlanner()
   nh_private.param("random_node_dist", ivEnvironmentParams.random_node_distance,
                    1.0);
 
+  // body boundingbox settings for path follow planner
+  nh_private.param("bodyBbox/size/x", ivEnvironmentParams.bodyBbox_x, 0.3);
+  nh_private.param("bodyBbox/size/y", ivEnvironmentParams.bodyBbox_y, 0.3);
+
   // footstep settings
   nh_private.param("foot/size/x", ivEnvironmentParams.footsize_x, 0.16);
   nh_private.param("foot/size/y", ivEnvironmentParams.footsize_y, 0.06);
@@ -131,6 +135,31 @@ FootstepPlanner::FootstepPlanner()
               "Exit!");
     exit(2);
   }
+
+  // create the bounding box for collision checking
+  // this part is converted from sbpl
+  /*
+  // set the perimeter of the robot (it is given with 0,0,0 robot ref. point for which planning is done)
+    vector<sbpl_2Dpt_t> perimeterptsV;
+    sbpl_2Dpt_t pt_m;
+    double halfwidth = 0.01; //0.3;
+    double halflength = 0.01; //0.45;
+    pt_m.x = -halflength;
+    pt_m.y = -halfwidth;
+    perimeterptsV.push_back(pt_m);
+    pt_m.x = halflength;
+    pt_m.y = -halfwidth;
+    perimeterptsV.push_back(pt_m);
+    pt_m.x = halflength;
+    pt_m.y = halfwidth;
+    perimeterptsV.push_back(pt_m);
+    pt_m.x = -halflength;
+    pt_m.y = halfwidth;
+    perimeterptsV.push_back(pt_m);
+    // clear the footprint
+    perimeterptsV.clear();
+	*/
+
   // create footstep set
   ivEnvironmentParams.footstep_set.clear();
   double max_step_width = 0;
